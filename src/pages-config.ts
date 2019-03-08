@@ -10,6 +10,6 @@ export interface Page {
 export default (([
 	{
 		name: 'im',
-		inlineSource: '.(js|css)$'
+		inlineSource: '.(js|css|eot|svg|ttf|woff|woff2)$'
 	}, 
 ]) as Page[]);
