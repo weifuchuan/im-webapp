@@ -1,4 +1,4 @@
-{
+module.exports = {
   "presets": [
     ["@babel/preset-env", {
       "useBuiltIns": "usage"
@@ -25,14 +25,15 @@
       "proposal": "minimal"
     }],
     ["import", {
-      "libraryName": "antd",
-      "libraryDirectory": "es",
-      "style": "css"
-    }],
-    ["import", {
       "libraryName": "antd-mobile",
       "style": "css"
     }],
+    ["import", {
+      "libraryName": "@material-ui/core",
+      "libraryDirectory": "es",
+      "style": false,
+      "camel2DashComponentName": false
+    }, "import-material"],
     "babel-plugin-styled-components"
   ]
 }

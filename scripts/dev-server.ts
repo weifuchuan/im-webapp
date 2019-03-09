@@ -4,12 +4,13 @@ import chalk from 'chalk';
 import webpack from 'webpack';
 import WebpackDevServer from 'webpack-dev-server';
 import pagesConfig from '../src/pages-config';
+import { resolveApp } from '../config/kit';
+
 const clearConsole = require('react-dev-utils/clearConsole');
 const { choosePort, createCompiler, prepareProxy, prepareUrls } = require('react-dev-utils/WebpackDevServerUtils');
 const openBrowser = require('react-dev-utils/openBrowser');
 const config = require('../config/webpack.config.dev');
 const createDevServerConfig = require('../config/webpackDevServer.config');
-import { resolveApp } from '../config/kit';
 
 process.env.BABEL_ENV = 'development';
 process.env.NODE_ENV = 'development';

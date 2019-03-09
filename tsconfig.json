@@ -15,7 +15,7 @@
     "experimentalDecorators": true,
     "jsx": "react",
     "importHelpers": true,
-    "moduleResolution": "node", 
+    "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "suppressImplicitAnyIndexErrors": true,
@@ -27,10 +27,17 @@
     "skipLibCheck": true,
     "locale": "zh-CN"
   },
+  "include": [
+    "src",
+    "types",
+    "config",
+    "scripts", "types/global.d.ts"
+  ],
   "exclude": [
     "node_modules",
     "build",
-    "flow-typed"
+    "flow-typed",
+    "public"
   ],
   "module": "ESNext"
 }
